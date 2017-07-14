@@ -1,13 +1,13 @@
 {
    "background": {
-      "scripts": [ "javascripts/jquery-3.2.1.min.js", "javascripts/background.min.js" ]
+      "scripts": [ "javascripts/jquery-3.2.1.min.js", "data/everypolitician.org.js", "javascripts/background.min.js" ]
    },
    "browser_action": {
       "default_popup": ""
    },
    "content_scripts": [ {
       "css": [ "stylesheets/inject.min.css", "stylesheets/tooltipster.bundle.min.css" ],
-      "js": [ "javascripts/jquery-3.2.1.min.js", "javascripts/tooltipster.bundle.min.js", "javascripts/jquery.mark.min.js", "javascripts/mustache.js", "javascripts/diacritics.js", "javascripts/contentscript.min.js" ],
+      "js": [ "data/everypolitician.org.js", "javascripts/jquery-3.2.1.min.js", "javascripts/tooltipster.bundle.min.js", "javascripts/jquery.mark.min.js", "javascripts/mustache.js", "javascripts/diacritics.js", "javascripts/contentscript.min.js" ],
       "matches": [ "http://*/*", "https://*/*" ]
    } ],
    "description": "Keep track of your representatives in parliament.",
