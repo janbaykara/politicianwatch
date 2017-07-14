@@ -1,0 +1,19 @@
+{
+   "background": {
+      "scripts": [ "javascripts/jquery-3.2.1.min.js", "javascripts/background.min.js" ]
+   },
+   "browser_action": {
+      "default_popup": ""
+   },
+   "content_scripts": [ {
+      "css": [ "stylesheets/inject.min.css", "stylesheets/tooltipster.bundle.min.css" ],
+      "js": [ "javascripts/jquery-3.2.1.min.js", "javascripts/tooltipster.bundle.min.js", "javascripts/jquery.mark.min.js", "javascripts/mustache.js", "javascripts/diacritics.js", "javascripts/contentscript.min.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "description": "Keep track of your representatives in parliament.",
+   "manifest_version": 2,
+   "name": "PoliticianWatch",
+   "permissions": [ "activeTab", "storage", "http://*/*", "https://*/*" ],
+   "version": "1.0.0",
+   "web_accessible_resources": [ "images/*", "fonts/*", "template/*" ]
+}
